@@ -1,7 +1,7 @@
 // App.js
 import React from 'react';
 import styles from '../css/home.module.css';
-import avatar from '../assets/22A91A61F8.JPG'; // Replace with the actual path to the avatar image
+import avatar from '../assets/22A91A61F8.jpg'; 
 import Certifications from './certifications';
 import AboutMe from './AboutMe';
 import ContactUs from './Contact';
