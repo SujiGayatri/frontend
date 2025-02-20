@@ -1,0 +1,213 @@
+.contact-container {
+    height: 100svh;
+    /* background-color: #121821; */
+    background-color: #00d0fa;
+    display: flex;
+    color: #fff;
+  }
+  .each-info-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .icons {
+    height: 19px;
+    width: 19px;
+    margin: 0 15px 0 0;
+  }
+  
+  /* ************ Smaller Devices  *************** */
+  @media screen and (max-width: 767px) {
+    .contact-container {
+      flex-direction: column;
+      padding: 20px 30px;
+    }
+    .contact-header-and-info-and-form-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact-info-and-form-container {
+      display: flex;
+      flex-direction: column;
+      margin: 34px 0 0 0;
+      color: #f0f0f0;
+    }
+    .contact-header {
+      font-size: 26px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .contact-desc {
+      font-size: 12px;
+      text-align: center;
+    }
+    .each-info-container {
+      margin: 10px 0;
+    }
+    .info {
+      font-size: 11px;
+    }
+    .contact-info-header {
+      font-size: 17px;
+      font-weight: 500;
+    }
+    .social-media-container {
+      margin-top: 33px;
+    }
+    .social-media-header {
+      font-size: 17px;
+      font-weight: 500;
+      margin: 0 0 10px 0;
+    }
+    .social-media-icons {
+      height: 19px;
+      width: 19px;
+      margin: 10px 19px 0 0;
+    }
+    .form-container {
+      margin: 20px 0 40px 0;
+    }
+    .user-details {
+      font-size: 11px;
+      height: 40px;
+      width: 140px;
+      padding-left: 15px;
+      background: transparent;
+      margin: 0 8px 8px 0;
+      border: none;
+      border-bottom: 1px solid transparent;
+      border-image: linear-gradient(to right, #1e1e30, dodgerblue);
+      border-image-slice: 1;
+      border-radius: 25px;
+      outline: none;
+      color: #f0f0f0;
+    }
+    .user-text {
+      font-size: 11px;
+      width: 100%;
+      padding: 15px;
+      background: transparent;
+      margin: 30px 0;
+      border: none;
+      border-bottom: 1px solid transparent;
+      border-image: linear-gradient(to right, #1e1e30, dodgerblue);
+      border-image-slice: 1;
+      border-radius: 16px;
+      outline: none;
+      color: #f0f0f0;
+    }
+  }
+  
+  /* ************ Larger Devices  *************** */
+  @media screen and (min-width: 768px) {
+    .contact-container {
+      justify-content: center;
+      padding: 40px 0;
+    }
+    .contact-header-and-info-and-form-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact-info-and-form-container {
+      display: flex;
+      width: 70vw;
+      justify-content: space-around;
+      margin: 60px 0 0 0;
+      color: #dae6e8;
+    }
+    .contact-header {
+      font-size: 26px;
+      font-weight: 500;
+      letter-spacing: 0.3rem;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .contact-desc {
+      font-size: 12px;
+      text-align: center;
+    }
+    .contact-info-header {
+      font-size: 17px;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+    .social-media-container {
+      margin-top: 35px;
+    }
+    .social-media-header {
+      font-size: 17px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+    .social-media-icons-color {
+      color: #fff;
+    }
+    .social-media-icons {
+      height: 20px;
+      width: 20px;
+      margin: 0 25px 0 0;
+    }
+    .social-media-icons:hover {
+      cursor: pointer;
+    }
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 80px 0;
+    }
+    .user-details {
+      height: 46px;
+      width: 210px;
+      padding-left: 20px;
+      background: transparent;
+      margin: 0 15px 0 0;
+      border: none;
+      border-bottom: 1px solid transparent;
+      border-image: linear-gradient(to right, #1e1e30, dodgerblue);
+      border-image-slice: 1;
+      border-radius: 38px;
+      outline: none;
+      color: #fff;
+    }
+    .user-text {
+      padding: 15px;
+      background: transparent;
+      margin: 30px 0;
+      border: none;
+      border-bottom: 1px solid transparent;
+      border-image: linear-gradient(to right, #1e1e30, dodgerblue);
+      border-image-slice: 1;
+      border-radius: 16px;
+      outline: none;
+      color: #f0f0f0;
+    }
+    .info {
+      font-size: 11px;
+    }
+  }
+  
+  .btn {
+    height: 38px;
+    width: 150px;
+    border-radius: 25px;
+    color: #f0f0f0;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 2px transparent;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(101deg, #00d0fa, dodgerblue);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #121821 inset;
+    transition: all 0.7s;
+  }
+  .btn:hover {
+    box-shadow: none;
+    color: white;
+  }

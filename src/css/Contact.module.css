@@ -1,0 +1,223 @@
+/* Container */
+.container {
+  padding: 40px 20px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  height: fit-content;
+  background-color: #0d1321;
+}
+
+.headerContainer {
+  width: 50%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: bold;
+  color: #f0ebd8; /* Dark Navy */
+}
+
+.contactwithme {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.contactItems .icon {
+  font-size: 25px;
+}
+.contactItems{
+  padding-bottom: 10px;
+}
+
+.contactInfo {
+  margin: 20px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contactItem,
+.contactItems {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #f0ebd8; /* Steel Blue */
+  gap: 13px;
+}
+
+.icon {
+  font-size: 18px;
+  color: #748cab; /* Deep Blue */
+}
+
+.formContainer {
+  background-color: #1d2d44; /* Deep Blue */
+  padding: 20px;
+  width: 40%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #748cab; /* Soft Blue */
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  background-color: #f0ebd8; /* Light Beige */
+  color: #0d1321; /* Dark Navy */
+}
+
+.textArea {
+  resize: none;
+}
+
+.button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #3e5c76; /* Steel Blue */
+  color: #f0ebd8; /* Light Beige */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #748cab; /* Soft Blue */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For smaller screens like tablets or below (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .headerContainer {
+    width: 60%;
+    padding-left: 10px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .contactItem, .contactItems {
+    font-size: 14px;
+  }
+
+  .input, .button {
+    font-size: 14px;
+  }
+}
+
+/* For mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headerContainer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 26px;
+  }
+
+  .contactInfo {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .contactItem, .contactItems {
+    font-size: 14px;
+  }
+
+  .formContainer {
+    width: 90%;
+    padding: 20px 15px;
+  }
+
+  .input, .button {
+    font-size: 14px;
+  }
+}
+
+/* For very small screens (max-width: 425px) */
+@media (max-width: 425px) {
+  .headerContainer {
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .contactwithme {
+    font-size: 18px;
+  }
+  .container{
+    padding: 10px;
+  }
+  .contactItem, .contactItems {
+    font-size: 13px;
+  }
+
+  .formContainer {
+    width: 93%;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .input {
+    font-size: 14px;
+    width: 97%;
+  }
+
+  .button {
+    font-size: 14px;
+    width: 97%;
+  }
+}
+
+/* For extra small screens (max-width: 375px) */
+@media (max-width: 375px) {
+  .heading {
+    font-size: 22px;
+  }
+
+  .contactwithme {
+    font-size: 16px;
+  }
+
+  .contactItem, .contactItems {
+    font-size: 12px;
+  }
+
+  .input, .button {
+    font-size: 12px;
+  }
+}

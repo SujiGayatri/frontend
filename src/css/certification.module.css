@@ -1,0 +1,196 @@
+/* certification.module.css */
+
+/* Heading Styles */
+.main{
+    width: 100%;
+    padding: 5px 0;
+    /* height: 100svh; */
+    background-color: #0d1321;
+}
+.certificates {
+    
+    font-size: 2.5rem;
+  font-weight: bold;
+  color: #f0ebd8;
+  margin-left: 40px;
+  margin-top: 5px;
+  text-transform: uppercase; 
+  /* position: relative; */
+  z-index: 1;
+  }
+  
+  /* Gradient Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Container Styles */
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 2rem;
+    background-color: #0d1321; /* Light background for contrast */
+  }
+  
+  /* Card Styles */
+  .card {
+    background: #1d2d44; /* Card background color */
+    color: #f0ebd8; /* Text color */
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #f0ebd8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    text-align: left;
+    transition: all 0.3s ease; 
+  }
+  
+  /* Hover Effect for Card */
+  .card:hover {
+    background: #3e5c76; /* Change background on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+  }
+  
+  /* Card Title Styles */
+  .cardTitle {
+    height: 25%;
+    font-size: 1.5rem;
+    margin-bottom: 10px; 
+    color: #748cab; /* Title color */
+    font-weight: bold;
+  }
+  
+  /* Card Content Styles */
+  .cardContent {
+    font-size: 1rem;
+    margin: 5px 0;
+    line-height: 1.5;
+  }
+  
+  /* Media Query for Small Screens */
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+  }
+  
+  /* Button Styles */
+.cardButton {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  color: #f0ebd8;
+  background-color: #3e5c76;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+.cardButton:hover {
+  background-color: #748cab;
+  transform: translateY(-2px);
+}
+@media (max-width: 1024px) {
+  .certificates {
+    font-size: 28px;
+    margin-left: 20px;
+    text-align: center;
+  }
+
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+  }
+
+  .card {
+    padding: 12px;
+  }
+
+  .cardTitle {
+    font-size: 1.3rem;
+  }
+
+  .cardContent {
+    font-size: 0.9rem;
+  }
+
+  .cardButton {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .certificates {
+    font-size: 26px;
+    text-align: center;
+    margin-left: 15px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .cardTitle {
+    font-size: 1.2rem;
+  }
+
+  .cardContent {
+    font-size: 0.85rem;
+  }
+
+  .cardButton {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificates {
+    /* padding-left: 10px; */
+    font-size:24px;
+    text-align: left;
+  }
+
+  .container {
+    padding: 0.5rem;
+  }
+
+  .card {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .cardTitle {
+    font-size: 1.1rem;
+  }
+
+  .cardContent {
+    font-size: 0.8rem;
+  }
+
+  .cardButton {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}
+

@@ -1,0 +1,322 @@
+/* AboutMe.module.css */
+.container {
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 2rem;
+    background-color: #0d1321;
+    color: #f0ebd8;
+    height: 100svh;
+  }
+  
+  /* AboutMe.module.css */
+
+/* Left Section Styles */
+.leftSection {
+  /* background: linear-gradient(135deg, #1d2d44, #3e5c76);  */
+  /* padding: 2rem; */
+  border-radius: 15px;
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); */
+  text-align: left;
+  color: #f0ebd8;
+  position: relative;
+  overflow: hidden;
+  height: fit-content;
+  width: 600px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f0ebd8;
+  position: relative;
+  z-index: 1;
+}
+
+/* .divider {
+  width: 50%;
+  height: 4px;
+  margin: 1rem auto;
+  background: linear-gradient(90deg, #748cab, #f0ebd8);
+  border-radius: 2px;
+} */
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 1rem 0;
+  z-index: 1;
+  position: relative;
+}
+
+.highlight {
+  color: #748cab;
+  font-weight: bold;
+}
+
+.emphasis {
+  font-style: italic;
+  color: #a5b9d0;
+}
+
+/* Decorative Quote Block */
+.quote {
+  margin-top: 2rem;
+  padding: 1rem;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #f0ebd8;
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #f0ebd8;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  position: relative;
+}
+/* Add this to your existing CSS */
+
+.resumeButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.resumeButton {
+  background-color: #3e5c76;
+  color: #f0ebd8;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+}
+
+.resumeButton:hover {
+  background-color: #748cab;
+  transform: translateY(-5px);
+}
+
+.resumeButton:active {
+  transform: translateY(0);
+}
+
+
+/* Add a decorative background effect */
+
+.rightSection {
+  background: radial-gradient(30deg,#0d1321, #1d2d44,#0d1321);
+  padding: 2rem 0 0 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+  width: 500px;
+}
+
+/* Pseudo-elements for dynamic glowing effects */
+.rightSection::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(116, 140, 171, 0.6), transparent);
+  z-index: 0;
+  filter: blur(60px);
+}
+
+.rightSection::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(62, 92, 118, 0.6), transparent);
+  z-index: 0;
+  filter: blur(80px);
+}
+
+/* Content stays on top of pseudo-elements */
+.tabNavigation,
+.skillsGrid,
+.educationContainer {
+  position: relative;
+  z-index: 1;
+}
+
+/* Tab Navigation */
+.tabNavigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+/* .rightSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+} */
+.tabButton {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  border: none;
+  background-color: transparent;
+  color: #f0ebd8;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.tabButton:hover {
+  color: #f0ebd8;
+}
+
+.activeTab {
+  border-bottom: 3px solid #f0ebd8;
+}
+
+/* Skills Section */
+.skillsGrid {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  /* grid-template-columns: (auto-fit, minmax(100px, 1fr)); */
+  /* gap: 15px; */
+}
+
+.skillCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f0ebd8;
+  transition: transform 0.5s ease-in-out;
+  transform-style: preserve-3d;
+  margin: 0; /* Remove any margin */
+  padding: 0;
+  width: 100%;
+}
+
+.skillCard:hover {
+  transform: rotateY(20deg) rotateX(10deg);
+}
+
+.skillIcon {
+  font-size: 3rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Education Section */
+.educationContainer {
+  display: grid;
+  padding-left: 5px;
+  gap: 0.5rem;
+}
+
+.educationCard {
+  background-color: transparent;
+  color: #f0ebd8;
+  border-left: 3px solid #f0ebd8;
+  margin: 5px;
+  padding-left: 15px;
+  text-align: left;
+  width: 90%;
+}
+.educationCard h3{
+  margin: 5px 0;
+}
+.educationCard p{
+  margin: 5px 0;
+}
+.institution {
+  font-style: italic;
+  margin: 0.01rem 0;
+}
+.educationCard, .skillCard {
+  border-radius: 0;
+}
+.year {
+  color: #748cab;
+  font-size: 0.9rem;
+}
+
+.description {
+  margin-top: 0.01rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 1rem;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .leftSection, .rightSection {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .rightSection {
+    height: auto;
+    /* padding: 1.5rem; */
+  }
+}
+
+@media (max-width: 768px) {
+  .skillsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+  .title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+  }
+  /* .rightSection{
+    width: 350px;
+  } */
+  .tabButton {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+
+  .skillCard p {
+    font-size: 0.9rem;
+  }
+  .skillIcon{
+    font-size: 2.3rem;
+  }
+  .educationCard h3, .educationCard p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .title {
+    font-size: 22px;
+  }
+
+  .skillsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
